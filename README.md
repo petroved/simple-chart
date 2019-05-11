@@ -11,4 +11,4 @@ I use yarn but it's just as easy to use npm if you prefer.
 
 ## Contribute  
 
-I can't promise this will stay updated as React, Typescript, or ESLint is updated. Feel free to create a pull request if you want to add features or update dependencies. I actively watch my GitHub notifications.
+I can't promise this will stay updated as React, Typescript, or ESLint are updated. Feel free to create a pull request if you want to add features or update dependencies. I actively watch my GitHub notifications.
