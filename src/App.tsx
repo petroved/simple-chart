@@ -1,6 +1,6 @@
-import React from 'react'
-import { ReactComponent as Logo } from './logo.svg'
-import './App.css'
+import React from 'react';
+import { ReactComponent as Logo } from './logo.svg';
+import './App.css';
 
 export const App = () => {
   return (
@@ -10,15 +10,10 @@ export const App = () => {
         <p>
           <code>React ESLint Boilerplate</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
       </header>
     </div>
-  )
-}
+  );
+};
