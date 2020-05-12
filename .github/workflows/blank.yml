@@ -1,4 +1,4 @@
-name: Jesting
+name: Run Jest Tests
 
 on:
   push:
@@ -10,14 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.2
+      - uses: actions/checkout@2.1.0
+      - uses: actions/setup-node@v1.4.2
         with:
           node-version: '>=14.2.0'
-      - name: Install Dependencies
-        run: npm install
-      - name: cwd
-        run: 'ls -l'
-      - name: Run Jest
-        run: 'npm run test'
-            
+      - run: npm ci
+      - run: npm run test
