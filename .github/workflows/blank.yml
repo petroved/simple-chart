@@ -16,6 +16,8 @@ jobs:
           node-version: '>=14.2.0'
       - name: Install Dependencies
         run: npm install
+      - name: cwd
+        run: 'ls -l'
       - name: Run Jest
-        run: npm run test
+        run: 'npm run test'
             
