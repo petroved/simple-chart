@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Logo style={{ width: '100%', height: '100%' }} />
+        <Logo style={{ width: '128px', height: '128px' }} />
         <p>
           <code>React ESLint Boilerplate</code>
         </p>
