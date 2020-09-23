@@ -1,6 +1,6 @@
 {
   "name": "react-typescript-eslint-empty-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "dependencies": {
     "@types/jest": "26.0.14",
@@ -14,11 +14,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-		"build": "react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.tsx\"",
-		"format": "prettier --write \"src/**/*.tsx\"",
+    "format": "prettier --write \"src/**/*.tsx\"",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
