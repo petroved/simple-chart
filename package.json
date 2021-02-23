@@ -1,16 +1,16 @@
 {
   "name": "react-typescript-eslint-empty-boilerplate",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "26.0.14",
-    "@types/node": "14.11.2",
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3",
-    "typescript": "^4.0.3"
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.3",
+    "typescript": "^4.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.tsx\"",
     "format": "prettier --write \"src/**/*.tsx\"",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm test --watchAll=false && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
@@ -40,10 +40,10 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/parser": "^4.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-react": "^7.20.6",
-    "prettier": "2.1.2"
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1"
   }
 }

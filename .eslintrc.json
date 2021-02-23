@@ -6,17 +6,10 @@
       "jsx": true
     },
     "ecmaVersion": 6,
-		"sourceType": "module"
+    "sourceType": "module"
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint"],
-  "extends": [
-    "prettier",
-    "prettier/react",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["prettier", "eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -29,5 +22,10 @@
   "env": {
     "browser": true,
     "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
