@@ -4,8 +4,6 @@ TSLint was deprecated by [Palantir](https://medium.com/palantir/tslint-in-2019-1
 
 ## Get Started
 
-I use yarn but it's just as easy to use npm if you prefer.
-
 1. `yarn` or `npm install`
 2. `yarn start` or `npm run start`
 
@@ -14,16 +12,7 @@ I use yarn but it's just as easy to use npm if you prefer.
 If your main editor of choice is Microsoft's Visual Studio Code, then installing the ESLint extension and adding these settings to your instance of VSCode
 will allow you to see any ESLint warnings or errors right in your editor.
 
-```
-"eslint.validate": [
-	"javascript",
-	"javascriptreact",
-	"typescript",
-	"typescriptreact"
-]
-```
-
-Refer to the extension documentation if you're having issues.
+`"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]`
 
 ## Contribute
 
