@@ -1,19 +1,14 @@
 {
-    "name": "react-typescript-eslint-empty-boilerplate",
-    "version": "0.4.0",
+    "name": "simple-chart-exercise",
+    "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.1.0",
-        "@testing-library/user-event": "^12.1.10",
-        "@types/jest": "^26.0.15",
-        "@types/node": "^12.0.0",
-        "@types/react": "^17.0.0",
-        "@types/react-dom": "^17.0.0",
+        "d3-format": "^3.0.1",
+        "d3-time-format": "^4.0.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
-        "react-scripts": "4.0.3",
-        "typescript": "^4.1.2",
+        "react-financial-charts": "^1.3.1",
+        "react-scripts": "^4.0.3",
         "web-vitals": "^1.0.1"
     },
     "scripts": {
@@ -49,11 +44,29 @@
         ]
     },
     "devDependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@types/d3-format": "^3.0.1",
+        "@types/d3-time-format": "^4.0.0",
+        "@types/jest": "^26.0.15",
+        "@types/node": "^12.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
         "eslint": "^7.30.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-jest": "^24.3.6",
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-react": "^7.24.0",
-        "prettier": "^2.3.2"
+        "prettier": "^2.3.2",
+        "typescript": "^4.1.2"
+    },
+    "jest": {
+        "transformIgnorePatterns": [
+            "node_modules/(?!(d3-format|d3-time-format|d3-time|d3-array|d3-scale|internmap|react-financial-charts|@react-financial-charts/*))"
+        ]
+    },
+    "engines": {
+        "node": ">=12"
     }
 }

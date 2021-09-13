@@ -1,18 +1,18 @@
 import './App.css';
-import logo from './logo.svg';
+import React from 'react';
+import { StockChart } from './StockChart';
 
 const App: React.FC = () => {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    <code>React ESLint Boilerplate</code>
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
+            <h1>Historical performance of Google(Alphabet Inc.) by GOOGL and GOOG stocks:</h1>
+            <div className="chart">
+                <StockChart symbol="GOOGL" key={1} />
+            </div>
+
+            <div className="chart">
+                <StockChart symbol="GOOG" key={1} />
+            </div>
         </div>
     );
 };
