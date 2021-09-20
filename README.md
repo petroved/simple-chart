@@ -2,10 +2,6 @@
 
 Present the historical stock performance of Google with an interactive chart.
 
-## DEMO
-
-Live DEMO: http://54.37.234.105:8090/
-
 ## Used
 
 Data API: https://twelvedata.com/
